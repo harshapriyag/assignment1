@@ -1,0 +1,7 @@
+<p>Username</p>
+<!-- Two way binding using ngModel -->
+<!--Forms module imported in app.module.ts-->
+<input type="text" class = "form-control" [(ngModel)]= "username">
+<!--String Interpolation-->
+<p>String Interpolation:{{username}}</p>
+<button class = "btn btn-primary" [disabled]= "username ===''" (click)="username= ' '">Reset User</button>
